@@ -4,10 +4,12 @@ import Sidebar from "../src/components/sidebar/sidebar";
 import styles from "../styles/Home.module.css";
 
 
-export default function Home() {
+
+export default function Cargospg() {
 
     return (
         <div>
+
 
             <Topnav />
             <div className={styles.divprincipal}>
