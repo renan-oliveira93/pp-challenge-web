@@ -1,4 +1,4 @@
-import Table from "../src/components/table/table";
+import TableColaboradores from "../src/components/tableColaboradores/table_colaboladores";
 import Topnav from "../src/components/topnav/topnav";
 import Sidebar from "../src/components/sidebar/sidebar";
 import styles from "../styles/Home.module.css";
@@ -9,6 +9,7 @@ export default function Home() {
 
     return (
         <div>
+
             <Head>
                 <title>Pedido Pago | Home</title>
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -20,9 +21,13 @@ export default function Home() {
             <Topnav />
             <div className={styles.divprincipal}>
                 <Sidebar />
-                <Table />
+                <div className={styles.container}>
+                    <div className={styles.h1}>
+                        <h1>Organização</h1>
+                    </div>
+                    <TableColaboradores />
+                </div>
             </div>
-
         </div>
     )
 };

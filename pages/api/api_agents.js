@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const api = axios.create ({
+const apiAgents = axios.create({
     baseURL: "https://pp-api-desafio.herokuapp.com/agents",
 });
 
-export default api;
+export default apiAgents;
