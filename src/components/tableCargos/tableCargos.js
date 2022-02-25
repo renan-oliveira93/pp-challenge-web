@@ -52,6 +52,7 @@ export default function Table() {
                                 <td className={styles.td}>{coluna.name}</td>
                                 <td>{coluna.departament}</td>
                                 <td>{coluna.agents_quantity}</td>
+                                <td><Link href='./permissoes'><img src="/assets/menu.png" height="24" width="24" /></Link></td>
                             </tr>
                         })}
 

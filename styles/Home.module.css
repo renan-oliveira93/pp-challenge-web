@@ -169,6 +169,10 @@
     text-align: left;
 }
 
+.lista fieldset{
+    border: 1px solid #CAD6D1;;
+}
+
 .lista th{
     margin: 2.5rem;    
 }
@@ -218,10 +222,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center; 
-}
-
-.fieldset_detalhes img{
-    height: 30px;
 }
 
 .fieldset_detalhes button{
@@ -311,6 +311,43 @@
     display: flex;
     align-items: center;
     padding: 11px;
+}
+
+.abrir_menu_detalhes{
+    position: absolute;
+}
+
+.menu_detalhes{
+    list-style: none;
+    margin: 0%;
+    display: none;
+    flex-direction: column;
+    width: 280px;
+    height: 132px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 24px rgba(165, 171, 179, 0.4);
+    position: relative;
+}
+
+.menu_detalhes li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 280px;
+    height: 66px;
+    
+}
+
+.menu_detalhes img{
+    margin: 0%;
+}
+
+.menu_detalhes p{
+    color: #587169;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0%;
+    margin-left: 1rem;
 }
 
 /*estilizações de permissões*/
