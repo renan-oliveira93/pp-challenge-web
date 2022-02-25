@@ -111,9 +111,13 @@
 }
 
 .td img{
-    margin: 2rem;
+    margin: 1rem;
 }
 
+.img_menu{
+    width: 24px;
+    height: 24px;
+}
 
 .nav {
     font-weight: 600;
@@ -171,8 +175,6 @@
 
 .lista img {
     border-radius: 50%;
-    width: 38px;
-    height: 38px;
 }
 
 /*estilização do sidebar*/
