@@ -1,3 +1,5 @@
+/*estilizações do top nav*/
+
 .topnav{
     background-color: #ffffff;
     height: 61px;
@@ -43,22 +45,41 @@
     padding: 1rem;
 }
 
+/*estilizações globais*/
+
 .divprincipal{
     display: flex;
     flex-direction: row;
-}
-
-.sidebar{
-    background-color: #ffffff;
-    width: 256px;
-    border: 1px solid #EAEFED;
-    box-shadow: 0px 4px 8px rgba(165, 171, 179, 0.16);
 }
 
 .container{
     width: 956px;
     margin: 5rem;
 }
+
+.container a{
+    width: 38px;
+    height: 38px;
+    border-radius: 80%;
+    background-color: #EAEFED;
+    margin: 1rem;
+}
+
+.container h1{
+    color: #34423D;
+}
+
+.h1{
+    width: 95px;
+    color: #34423D;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    Padding: 20px;
+}
+
+/*estilizações da table colaboradores*/
 
 .table {
     display: flex;
@@ -76,14 +97,12 @@
 }
 
 .table td{
-    margin: 1rem;
-    max-width: 160px;
+    max-width: 190px;
 }
 
 .table tr{
     Width: 902px;
-    Height: 69px;
-    
+    Height: 69px;    
 }
 
 .td{
@@ -95,15 +114,6 @@
     margin: 2rem;
 }
 
-.h1{
-    width: 95px;
-    color: #34423D;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 100%;
-    Padding: 20px;
-}
 
 .nav {
     font-weight: 600;
@@ -161,4 +171,181 @@
 
 .lista img {
     border-radius: 50%;
+    width: 38px;
+    height: 38px;
+}
+
+/*estilização do sidebar*/
+
+.sidebar{
+    background-color: #ffffff;
+    width: 256px;
+    border: 1px solid #EAEFED;
+    box-shadow: 0px 4px 8px rgba(165, 171, 179, 0.16);
+}
+
+/*estilizações da pg detalhes do colaborador*/
+
+.h1_detalhes img{
+    padding: 11px;
+}
+
+.fieldset_dados{
+    border: 2px solid #CAD6D1;
+    width: 926px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.fieldset_dados h3{
+    width: 500px;
+    color: #34423D;
+}
+
+.fieldset_detalhes{
+    border: 2px solid #CAD6D1;
+    width: 418px;
+    height: 56px;
+    margin: 15px;
+    background-color:  #F5FAF8;
+    color: #A3B8B0;  
+    border-radius: 8px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.fieldset_detalhes img{
+    height: 30px;
+}
+
+.fieldset_detalhes button{
+    border: none;
+    background-color:  #F5FAF8;
+    color: #587169;     
+}
+
+/*estilização da table detalhes*/
+
+.avatar_detalhes_colaborador{
+    width: 956px;
+    margin-left: 2rem;    
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.avatar_detalhes_colaborador img{
+    border-radius: 80%;
+    width: 80px;
+    height: 80px;
+    background-color: #CAD6D1;
+}
+
+.avatar_detalhes_colaborador h3{
+    margin: 0%;
+    margin-left: 1rem;
+    color: #34423D;
+}
+
+.avatar_detalhes_colaborador p{
+    margin: 0%; 
+    margin-left: 1rem;
+    color: #587169;
+}
+
+.h1_detalhes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info_pessoais h3{
+    color: #34423D;
+    margin: 1rem;
+}
+
+.fieldset_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fieldset_info fieldset{
+    background-color:  #F5FAF8;
+    border: 2px solid #CAD6D1;
+    border-radius: 8px;
+    width: 286.67px;
+    height: 70px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.fieldset_info a{
+    border-radius: 80%;
+    width: 38px;
+    height: 38px;
+    background-color: #CAD6D1;
+}
+
+.fieldset_info h4{
+    color: #587169;
+    margin: 0%;
+    font-size: 14px;
+}
+
+.fieldset_info p{
+    color: #587169;
+    margin: 0%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fieldset_info img{
+    display: flex;
+    align-items: center;
+    padding: 11px;
+}
+
+/*estilizações de permissões*/
+
+.permissoes_dados{
+    display: flex;
+    justify-content: space-between;
+}
+
+.permissoes_dados fieldset{
+    background-color:  #F5FAF8;
+    border: 2px solid #CAD6D1;
+    border-radius: 8px;
+    width: 318px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.permissoes_dados p{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*estilização da 404*/
+
+.page404{
+    background-image: url(../public/assets/404.png);
+    background-size: cover;
+    width: 100vw;
+    height: 640px;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.page404 h1{
+    margin: 0;
 }
