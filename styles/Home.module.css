@@ -3,7 +3,7 @@
 .topnav{
     width: 100vw;
     background-color: #ffffff;
-    height: 61px;
+    height: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,31 +11,32 @@
 }
 
 .topnav img{
-    width:32px;
-    height: 32px;
+    width: 2.3rem;
+    height: 2.3rem;
     margin: 1rem;
 }
 
 .avatar_field{
     display: flex;
     align-items: center;
+    margin-right: 1rem;
 }
 
 .avatar_field h4{
     margin: 0% ;
-    font-size: 14px;   
+    font-size: 1rem;   
 }
 
 .avatar_field p{
     margin: 0% ; 
-    font-size: 12px; 
+    font-size: 1rem; 
     color: #587169; 
 }
 
 .avatar_field button{
     background-color: #B5F1DD;
-    width: 32px;
-    height: 32px;
+    width: 2.3rem;
+    height: 2.3rem;
     border-radius: 80%;
     border: none;
 }
@@ -54,7 +55,6 @@
 }
 
 .container{
-    width: 956px;
     margin: 5rem;
 }
 
@@ -68,16 +68,15 @@
 
 .container h1{
     color: #34423D;
-}
+}   
 
 .h1{
-    width: 95px;
     color: #34423D;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 1.3rem;
     line-height: 100%;
-    Padding: 20px;
+    Padding: 1rem;
 }
 
 /*estilizações da table colaboradores*/
@@ -88,22 +87,16 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    width: 956px;    
     border-radius: 8px;
 }
 
 .table h2{
      margin-left: 3rem;
-     width: 956px;
-}
-
-.table td{
-    max-width: 190px;
+     width: 58rem;
 }
 
 .table tr{
-    Width: 902px;
-    Height: 69px;    
+    Height: 4rem;    
 }
 
 .td{
@@ -115,22 +108,16 @@
     margin: 1rem;
 }
 
-.img_menu{
-    width: 24px;
-    height: 24px;
-}
-
 .nav {
     font-weight: 600;
-    font-size: 14px;
     border-bottom: 2px solid #EAEFED;
-    width: 908px;
-    margin: 20px;
+    width: 57rem;
+    margin: 1.2rem;
 }
 
 .nav button {
-    width: 196px;
-    height: 30px;
+    width: 13rem;
+    height: 2rem;
     border: none;
     background-color: #ffffff;
     position: relative;
@@ -147,7 +134,7 @@
 }
 
 .fieldset {
-    Width: 908px;
+    Width: 57rem;
     border-radius: 8px;
     border: 2px solid #CAD6D1;
     color: #CAD6D1;  
@@ -156,23 +143,23 @@
 }
 
 .input {
-    Width: 800px;
+    Width: 55rem;
    outline: none;
     border: none;
     font-weight: 500;
-    font-size: 16px;   
+    font-size: 1rem;   
 }
 
 .lista {
-    width: 902px;
-    margin: 15px;
+    width: 57rem;
+    margin: 1rem;
     text-align: left;
 }
 
 .lista thead{  
     color: #587169;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .lista fieldset{
@@ -191,7 +178,7 @@
 
 .sidebar{
     background-color: #ffffff;
-    width: 256px;
+    width: 15rem;
     border: 1px solid #EAEFED;
     box-shadow: 0px 4px 8px rgba(165, 171, 179, 0.16);
 }
@@ -199,12 +186,12 @@
 /*estilizações da pg detalhes do colaborador*/
 
 .h1_detalhes img{
-    padding: 11px;
+    padding: 0.7rem;
 }
 
 .fieldset_dados{
     border: 2px solid #CAD6D1;
-    width: 926px;
+    width: 60rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -213,15 +200,15 @@
 }
 
 .fieldset_dados h3{
-    width: 500px;
+    width: 50rem;
     color: #34423D;
 }
 
 .fieldset_detalhes{
     border: 2px solid #CAD6D1;
-    width: 418px;
-    height: 56px;
-    margin: 15px;
+    width: 27rem;
+    height: 3.5rem;
+    margin: 1rem;
     background-color:  #F5FAF8;
     color: #A3B8B0;  
     border-radius: 8px;   
@@ -239,7 +226,7 @@
 /*estilização da table detalhes*/
 
 .avatar_detalhes_colaborador{
-    width: 956px;
+    width: 60rem;
     margin-left: 2rem;    
     padding: 1rem;
     display: flex;
@@ -248,8 +235,8 @@
 
 .avatar_detalhes_colaborador img{
     border-radius: 80%;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     background-color: #CAD6D1;
 }
 
@@ -286,8 +273,8 @@
     background-color:  #F5FAF8;
     border: 2px solid #CAD6D1;
     border-radius: 8px;
-    width: 286.67px;
-    height: 70px;
+    width: 18rem;
+    height: 4.5rem;
     margin: 1rem;
     display: flex;
     align-items: center;
@@ -295,28 +282,26 @@
 
 .fieldset_info a{
     border-radius: 80%;
-    width: 38px;
-    height: 38px;
     background-color: #CAD6D1;
 }
 
 .fieldset_info h4{
     color: #587169;
     margin: 0%;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .fieldset_info p{
     color: #587169;
     margin: 0%;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .fieldset_info img{
     display: flex;
     align-items: center;
-    padding: 11px;
+    padding: 0.7rem;
 }
 
 /*estilizações de permissões*/
@@ -330,8 +315,8 @@
     background-color:  #F5FAF8;
     border: 2px solid #CAD6D1;
     border-radius: 8px;
-    width: 442px;
-    height: 56px;
+    width: 27rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     margin: 1.5rem;
@@ -340,7 +325,7 @@
 
 .permissoes_dados p{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     color: #587169;
 }
 
@@ -358,4 +343,10 @@
 
 .page404 h1{
     margin: 0;
+}
+
+/*estilização de responsividade*/
+
+@media screen and (max-width:360px) {
+    
 }
