@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from '../../../styles/Home.module.css';
 import Link from "next/link";
 import apiAgents from "../../../pages/api/api_agents";
-import BasicMenu from "../dropdown_menu/dropdown_menu";
+import BasicMenu from "../dropdown_menu-detalhes/dropdown_menu-detalhes";
 
 export default function TableColaboradores() {
     const [colaboradores, setColaboradores] = useState(['']);

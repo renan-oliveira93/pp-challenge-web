@@ -80,11 +80,6 @@
     Padding: 20px;
 }
 
-.dropdown button{
-    text-decoration: none;
-    margin: 1rem;
-}
-
 /*estilizações da table colaboradores*/
 
 .table {
@@ -173,6 +168,12 @@
     width: 902px;
     margin: 15px;
     text-align: left;
+}
+
+.lista thead{  
+    color: #587169;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .lista fieldset{
@@ -319,43 +320,6 @@
     padding: 11px;
 }
 
-.abrir_menu_detalhes{
-    position: relative;
-}
-
-.menu_detalhes{
-    list-style: none;
-    margin: 0%;
-    display: none;
-    flex-direction: column;
-    width: 280px;
-    height: 132px;
-    border-radius: 8px;
-    box-shadow: 0px 8px 24px rgba(165, 171, 179, 0.4);
-    position: absolute;
-}
-
-.menu_detalhes li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 280px;
-    height: 66px;
-    cursor: pointer;
-}
-
-.menu_detalhes img{
-    margin: 0%;
-}
-
-.menu_detalhes p{
-    color: #587169;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0%;
-    margin-left: 1rem;
-}
-
 /*estilizações de permissões*/
 
 .permissoes_dados{
@@ -367,16 +331,18 @@
     background-color:  #F5FAF8;
     border: 2px solid #CAD6D1;
     border-radius: 8px;
-    width: 318px;
-    height: 70px;
+    width: 442px;
+    height: 56px;
     display: flex;
     align-items: center;
     margin: 1.5rem;
+    color: #CAD6D1;
 }
 
 .permissoes_dados p{
     font-weight: 500;
     font-size: 16px;
+    color: #587169;
 }
 
 /*estilização da 404*/

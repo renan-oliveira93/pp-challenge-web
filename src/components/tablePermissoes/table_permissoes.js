@@ -1,3 +1,4 @@
+import { Checkbox } from '@mui/material';
 import styles from '../../../styles/Home.module.css';
 
 export default function Table_permissoes() {
@@ -34,11 +35,59 @@ export default function Table_permissoes() {
                 <tbody>
                     <tr>
                         <td>Pedidos</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
                     </tr>
 
+                    <tr>
+                        <td>Clientes</td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcketink</td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Colaboradores</td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Cargos e Permissões</td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Catálogo</td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Financeiro</td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Web site e lojas fisicas</td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                        <td><Checkbox color="success" /></td>
+                    </tr>
 
                 </tbody>
             </table>

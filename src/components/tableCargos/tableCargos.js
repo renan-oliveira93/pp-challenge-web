@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from '../../../styles/Home.module.css';
 import Link from "next/link";
 import apiRoles from "../../../pages/api/api_roles";
+import BasicMenuCargos from "../dropdown_menu-cargos/dropdown_menu-cargos";
 
 
 
@@ -40,7 +41,6 @@ export default function Table() {
                 <table className={styles.lista}>
                     <thead>
                         <tr>
-
                             <th scope="col">Cargo</th>
                             <th scope="col">Departamento</th>
                             <th scope="col">Colaboladores</th>
@@ -49,10 +49,10 @@ export default function Table() {
                     <tbody>
                         {cargos.roles && cargos.roles.map(coluna => {
                             return <tr key={new Date().getMilliseconds()}>
-                                <td className={styles.td}>{coluna.name}</td>
+                                <td>{coluna.name}</td>
                                 <td>{coluna.departament}</td>
                                 <td>{coluna.agents_quantity}</td>
-                                <td><Link href='./permissoes'><img src="/assets/menu.png" height="24" width="24" /></Link></td>
+                                <td><BasicMenuCargos /></td>
                             </tr>
                         })}
 
