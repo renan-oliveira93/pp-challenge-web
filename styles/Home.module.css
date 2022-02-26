@@ -93,6 +93,7 @@
 .table h2 {
     margin-left: 3rem;
     width: 58rem;
+    color: #34423D;
 }
 
 .table tr {
@@ -405,7 +406,7 @@
     }
 
     .input {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .h1 {
@@ -433,7 +434,9 @@
         height: 3rem;
     }
 
-
+    .table h2 {
+        font-size: 2rem;
+    }
 
 }
 

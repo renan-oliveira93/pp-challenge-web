@@ -38,7 +38,7 @@ export default function TableColaboradores() {
             </fieldset>
 
 
-            <h2>Lista de colaboradores</h2>
+            <h2>Listagem de colaboradores</h2>
 
             <table className={styles.lista}>
                 <thead>
