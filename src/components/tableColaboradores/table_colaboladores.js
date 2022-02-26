@@ -52,7 +52,7 @@ export default function TableColaboradores() {
                         {colaboradores.items && colaboradores.items.map(coluna => {
                             return <tr key={coluna.agent_id}>
 
-                                <td className={styles.td}><img height="38" width="38" src={coluna.image} width='32' height='32' />{coluna.name}</td>
+                                <td className={styles.td}><img height="38" width="38" src={coluna.image} />{coluna.name}</td>
                                 <td>{coluna.department}</td>
                                 <td>{coluna.role}</td>
                                 <td>{coluna.branch}</td>
