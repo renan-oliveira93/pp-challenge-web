@@ -348,5 +348,25 @@
 /*estilização de responsividade*/
 
 @media screen and (max-width:360px) {
-    
+    .topnav{
+        flex-direction: row-reverse;
+        width: 66rem;
+        height: 10rem;
+    }    
+    .topnav img{
+        width: 9rem;
+        height: 9rem;
+        margin: auto;
+    }
+    .topnav button{
+        width: 5rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+    .avatar_descricao{
+        display: none;
+    }
+    .avatar_field{
+        margin: 2rem;
+    }
 }
