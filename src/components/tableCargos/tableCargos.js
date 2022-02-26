@@ -32,6 +32,7 @@ export default function Table() {
 
                 <fieldset className={styles.fieldset}>
                     <legend>Pesquisar por</legend>
+                    <img src="/assets/search.png" width='20px' />
                     <input className={styles.input} type="search" placeholder="Pesquisar por cargos" />
                 </fieldset>
 

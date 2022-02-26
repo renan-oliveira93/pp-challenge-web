@@ -31,6 +31,7 @@ export default function TableColaboradores() {
 
                 <fieldset className={styles.fieldset}>
                     <legend>Pesquisar por</legend>
+                    <img src="/assets/search.png" width='20px' />
                     <input className={styles.input} type="search" placeholder="Pesquisar por nome ou cpf" />
                 </fieldset>
 
