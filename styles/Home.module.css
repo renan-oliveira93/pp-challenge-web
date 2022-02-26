@@ -435,8 +435,39 @@
     }
 
     .table h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
+
+    .lista thead {
+        display: none;
+    }
+
+    .td_hide {
+        display: none;
+    }
+
+    .td {
+        font-size: 2rem;
+        width: 60rem;
+        height: 10rem;
+        margin: 1rem;
+        border: 2px solid #CAD6D1;
+        border-radius: 8px;
+    }
+
+    .td img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .td::before {
+        content: attr(data-aria-label);
+    }
+
+    .td_dropdown_table {
+        display: block;
+    }
+
 
 }
 
