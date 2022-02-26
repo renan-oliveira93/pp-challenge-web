@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from '../../../styles/Home.module.css';
 import Link from "next/link";
 import apiAgents from "../../../pages/api/api_agents";
-import { stepIconClasses } from "@mui/material";
+import BasicMenu from "../dropdown_menu/dropdown_menu";
 
 export default function TableColaboradores() {
     const [colaboradores, setColaboradores] = useState(['']);
@@ -56,22 +56,7 @@ export default function TableColaboradores() {
                                 <td>{coluna.role}</td>
                                 <td>{coluna.branch}</td>
                                 <td>{coluna.status}</td>
-                                <td className={styles.abrir_menu_detalhes}>
-                                    <img src="/assets/menu.png" height="24" width="24" />
-                                    <ul className={styles.menu_detalhes}>
-                                        <li>
-                                            <img src="/assets/eye.png" height="24" width="24"></img>
-                                            <Link href='./detalhes_colaborador'>
-                                                <p>ver colaborador</p>
-                                            </Link>
-
-                                        </li>
-                                        <li>
-                                            <img src="/assets/trash.png" height="24" width="24"></img>
-                                            <p>excluir</p>
-                                        </li>
-                                    </ul>
-                                </td>
+                                <td><BasicMenu /></td>
                             </tr>
                         })}
 

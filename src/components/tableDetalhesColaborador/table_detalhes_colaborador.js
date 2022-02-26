@@ -6,14 +6,16 @@ export default function Table_Detalhes_Colaborador() {
     const [colaboradores, setColaboradores] = useState(['']);
 
     useEffect(() => {
-        apiAgents1.get("./").then(({ data }) => {
+        apiAgents1.get("./1").then(({ data }) => {
             setColaboradores(data)
         });
         console.log(colaboradores);
     }, []);
 
     return (
+
         <div className={styles.table}>
+
 
             <div className={styles.avatar_detalhes_colaborador}>
                 <img src='/assets/user.png' />
@@ -22,7 +24,6 @@ export default function Table_Detalhes_Colaborador() {
                     <p>email@email.com</p>
                 </div>
             </div>
-
 
 
             <div className={styles.info_pessoais}>
