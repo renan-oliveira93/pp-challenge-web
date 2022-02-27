@@ -4,7 +4,6 @@ import Link from "next/link";
 import apiAgents from "../../../pages/api/api_agents";
 import BasicMenu from "../dropdown_menu-detalhes/dropdown_menu-detalhes";
 import Dropdown_colaboradores from "../dropdown_colaboradores/dropdown_colaboradores";
-import Dropdown_table from "../dropdow_table/dropdown_table";
 
 export default function TableColaboradores() {
     const [colaboradores, setColaboradores] = useState(['']);
@@ -53,17 +52,16 @@ export default function TableColaboradores() {
                 </thead>
                 <tbody>
                     {colaboradores.items && colaboradores.items.map(coluna => {
-                        return <tr key={coluna.agent_id}>
+                        return <tr className={styles.tr_responsivo} key={coluna.agent_id}>
 
                             <td data-aria-label="Nome Completo" className={styles.td}>
                                 <img height="38" width="38" src={coluna.image} />{coluna.name}
-                                <p className={styles.td_dropdown_table}><Dropdown_table /></p>
                             </td>
                             <td data-aria-label="Departamento" className={styles.td_hide}>{coluna.department}</td>
                             <td data-aria-label="Cargo" className={styles.td_hide}>{coluna.role}</td>
                             <td data-aria-label="Unidade" className={styles.td_hide}>{coluna.branch}</td>
                             <td data-aria-label="Status" className={styles.td_hide}>{coluna.status}</td>
-                            <td className={styles.td_hide}><BasicMenu /></td>
+                            <div className={styles.td_hide_bt}><td><BasicMenu /></td></div>
                         </tr>
                     })}
 

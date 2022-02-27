@@ -4,7 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Link from 'next/link';
 
-export default function Dropdown_table() {
+export default function DropdownMenuResp() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -33,13 +33,9 @@ export default function Dropdown_table() {
                 MenuListProps={{ 'aria-labelledby': 'basic-button', }}
             >
                 <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
-                    <img src='/assets/eye.png' /><Link href='./permissoes' ><p style={{ margin: '1rem', color: '#587169' }}>Ver cargo</p></Link></MenuItem>
+                    <img src='/assets/eye.png' /><Link href='./detalhes_colaborador' ><p style={{ margin: '1rem', color: '#587169' }}>Ver colaborador</p></Link></MenuItem>
                 <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
-                    <img src='/assets/edit.png' /><p style={{ margin: '1rem', color: '#CAD6D1' }}>Editar</p></MenuItem>
-                <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
-                    <img src='/assets/duplicate.png' /><p style={{ margin: '1rem', color: '#CAD6D1' }}>Duplicar</p></MenuItem>
-                <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
-                    <img src='/assets/repeat.png' /><p style={{ margin: '1rem', color: '#CAD6D1' }}>Excluir</p></MenuItem>
+                    <img src='/assets/trash.png' /><p style={{ margin: '1rem', color: '#CAD6D1' }}>Excluir</p></MenuItem>
             </Menu>
         </div >
     );

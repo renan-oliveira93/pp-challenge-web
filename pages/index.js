@@ -3,6 +3,7 @@ import Topnav from "../src/components/topnav/topnav";
 import Sidebar from "../src/components/sidebar/sidebar";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
+import TableMobileColaboradores from "../src/components/table_colaboradores_mobile/table_mobile_colaboradores";
 
 
 export default function Home() {
@@ -25,7 +26,10 @@ export default function Home() {
                     <div className={styles.h1}>
                         <h1>Organização</h1>
                     </div>
-                    <TableColaboradores />
+                    <div className={styles.table_desktop}>
+                        <TableColaboradores />
+                    </div>
+                    <TableMobileColaboradores />
                 </div>
             </div>
         </div>

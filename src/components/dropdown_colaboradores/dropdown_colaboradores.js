@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Link from 'next/link';
-import styles from '../../../styles/Home.module.css';
 
 export default function Dropdown_colaboradores() {
     const [anchorEl, setAnchorEl] = React.useState(null);

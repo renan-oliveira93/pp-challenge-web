@@ -331,6 +331,125 @@
     color: #587169;
 }
 
+/*estilizações da table mobile*/
+
+.table_mobile {
+    background-color: #ffffff;
+    width: 62rem;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h1_mobile {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #34423D;
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+.dropdown_colaboradores button {
+    width: 58rem;
+    margin: 1rem;
+    font-weight: 500;
+    font-size: 2.53rem;
+    border: 4px solid #CAD6D1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown_colaboradores img {
+    height: 3rem;
+}
+
+.nav_mobile {
+    border-bottom: 4px solid #CAD6D1;
+    padding-bottom: 4rem;
+    margin-top: 5rem;
+}
+
+
+.h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #34423D;
+    width: 58rem;
+    margin: 2rem;
+}
+
+.lista_mobile {
+    font-size: 3rem;
+}
+
+.list_ul {
+    border: 4px solid #7cf1dd;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(165, 171, 179, 0.16);
+}
+
+.lista_mobile li {
+    list-style: none
+}
+
+.avatar_img {
+    margin: 1rem;
+    margin-right: 4rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 80%;
+}
+
+.li_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descricao_div_principal {
+    display: flex;
+    flex-direction: column;
+    color: #587169;
+}
+
+.nome {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.descricao_div_principal p {
+    margin: 0%;
+    font-weight: 600;
+}
+
+.list_dropdown img {
+    height: 2.5rem;
+    margin: 1rem;
+    margin-right: 5rem;
+}
+
+.hide_list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hide_list li {
+    margin: 4rem;
+    color: #587169;
+}
+
+.hide_list_p {
+    margin: 0%;
+    font-weight: 600;
+}
+
+
 /*estilização da 404*/
 
 .page404 {
@@ -350,14 +469,13 @@
 /*estilização de responsividade*/
 
 @media screen and (max-width: 600px) {
+
     .container {
         margin: 0%;
     }
 
-    .table {
-        width: 64rem;
-        display: block;
-        margin: 1rem;
+    .sidebar {
+        display: none;
     }
 
     .topnav {
@@ -390,15 +508,23 @@
         margin: 0%;
     }
 
+    .table_desktop {
+        display: none;
+    }
+
     .fieldset {
-        margin: 2rem;
-        Width: 60rem;
-        height: 8rem;
+        width: 58rem;
+        margin: 1rem;
+        height: 11rem;
+        border: 4px solid #CAD6D1;
+        display: flex;
+        align-items: center;
     }
 
     .fieldset img {
-        width: 3rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
+        margin: 1rem;
     }
 
     .fieldset legend {
@@ -406,74 +532,25 @@
     }
 
     .input {
-        font-size: 2rem;
+        font-size: 3rem;
+        Width: 40rem;
+        margin: 1rem;
     }
 
     .h1 {
         font-size: 2.5rem;
-        margin: 1rem;
-    }
-
-    .colaboradores_desktop {
+        margin: 2rem;
         display: none;
     }
-
-    .dropdown_colaboradores button {
-        font-size: 2rem;
-        font-weight: 600;
-        border-radius: 8px;
-        display: flex;
-        width: 62rem;
-        height: 8rem;
-        margin: 1rem;
-        justify-content: space-around;
-        border: 2px solid #CAD6D1;
-    }
-
-    .dropdown_colaboradores img {
-        height: 3rem;
-    }
-
-    .table h2 {
-        font-size: 2.5rem;
-    }
-
-    .lista thead {
-        display: none;
-    }
-
-    .td_hide {
-        display: none;
-    }
-
-    .td {
-        font-size: 2rem;
-        width: 60rem;
-        height: 10rem;
-        margin: 1rem;
-        border: 2px solid #CAD6D1;
-        border-radius: 8px;
-    }
-
-    .td img {
-        height: 3rem;
-        width: 3rem;
-    }
-
-    .td::before {
-        content: attr(data-aria-label);
-    }
-
-    .td_dropdown_table {
-        display: block;
-    }
-
-
 }
 
 
 @media screen and (min-width: 601px) {
     .dropdown_colaboradores {
+        display: none;
+    }
+
+    .pg_mobile {
         display: none;
     }
 
