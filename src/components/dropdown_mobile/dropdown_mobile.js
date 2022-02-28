@@ -8,7 +8,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Link from 'next/link';
 import styles from '../../../styles/Home.module.css';
 
-
 export default function TemporaryDrawer() {
     const [state, setState] = React.useState({
         bottom: false,
@@ -35,14 +34,14 @@ export default function TemporaryDrawer() {
             <Divider />
             <List>
                 <MenuItem className={styles.item_menu} style={{ height: '15rem' }} >
-                    <img src='/assets/eye.png' /><Link href='./detalhes_colaborador' >
-                        <p style={{ margin: '1rem', color: '#587169' }}>Ver colaborador</p></Link></MenuItem>
+                    <Link href='./' >
+                        <p style={{ margin: '1rem', color: '#587169' }}>Colaboradores</p></Link></MenuItem>
             </List>
             <Divider />
             <List>
                 <MenuItem className={styles.item_menu} style={{ height: '15rem' }} >
-                    <img src='/assets/trash.png' />
-                    <p style={{ margin: '1rem', color: '#CAD6D1' }}>Excluir</p></MenuItem>
+                    <Link href='./cargos' >
+                        <p style={{ margin: '1rem', color: '#587169' }}>Cargos</p></Link></MenuItem>
             </List>
         </Box>
     );
