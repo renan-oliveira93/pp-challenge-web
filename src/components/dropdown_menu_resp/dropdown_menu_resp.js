@@ -29,10 +29,6 @@ export default function TemporaryDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                <MenuItem className={styles.item_menu} style={{ height: '15rem' }}><p>Categorias</p></MenuItem>
-            </List>
-            <Divider />
-            <List>
                 <MenuItem className={styles.item_menu} >
                     <img src='/assets/eye.png' /><Link href='./detalhes_colaborador' >
                         <p style={{ margin: '1rem', color: '#587169' }}>Ver colaborador</p></Link></MenuItem>
