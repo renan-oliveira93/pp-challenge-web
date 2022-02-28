@@ -33,13 +33,13 @@ export default function TemporaryDrawer() {
             </List>
             <Divider />
             <List>
-                <MenuItem className={styles.item_menu} >
+                <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
                     <img src='/assets/eye.png' /><Link href='./detalhes_colaborador' >
                         <p style={{ margin: '1rem', color: '#587169' }}>Ver colaborador</p></Link></MenuItem>
             </List>
             <Divider />
             <List>
-                <MenuItem className={styles.item_menu} >
+                <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
                     <img src='/assets/trash.png' /><p style={{ margin: '1rem', color: '#CAD6D1' }}>Excluir</p></MenuItem>
             </List>
         </Box>
@@ -49,7 +49,7 @@ export default function TemporaryDrawer() {
         <div>
             {['bottom'].map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}>Ações <img src='/assets/file-plus.png' /></Button>
+                    <Button onClick={toggleDrawer(anchor, true)}>Colaboradores <img src='/assets/menu.png' /></Button>
                     <Drawer
                         anchor={anchor}
                         open={state[anchor]}

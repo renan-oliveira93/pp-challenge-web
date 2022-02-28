@@ -1,42 +1,64 @@
 import * as React from 'react';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
 import MenuItem from '@mui/material/MenuItem';
 import Link from 'next/link';
+import styles from '../../../styles/Home.module.css';
 
-export default function BasicMenu() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
+export default function TemporaryDrawer() {
+    const [state, setState] = React.useState({
+        bottom: false,
+    });
+
+    const toggleDrawer = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+            return;
+        }
+
+        setState({ ...state, [anchor]: open });
     };
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
+
+    const list = (anchor) => (
+        <Box
+            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+            role="presentation"
+            onClick={toggleDrawer(anchor, false)}
+            onKeyDown={toggleDrawer(anchor, false)}
+        >
+            <List>
+                <MenuItem className={styles.item_menu} style={{ height: '15rem' }}><p>Categorias</p></MenuItem>
+            </List>
+            <Divider />
+            <List>
+                <MenuItem style={{ width: '280px', height: '61px' }}>
+                    <img src='/assets/eye.png' /><Link href='./detalhes_colaborador' >
+                        <p style={{ margin: '1rem', color: '#587169' }}>Ver colaborador</p></Link></MenuItem>
+            </List>
+            <Divider />
+            <List>
+                <MenuItem style={{ width: '280px', height: '61px' }}>
+                    <img src='/assets/trash.png' /><p style={{ margin: '1rem', color: '#CAD6D1' }}>Excluir</p></MenuItem>
+            </List>
+        </Box>
+    );
 
     return (
         <div>
-            <Button
-                id="basic-button"
-                aria-controls={open ? 'basic-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? 'true' : undefined}
-                onClick={handleClick}
-            >
-                <img src='/assets/menu.png' />
-            </Button>
-            <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{ 'aria-labelledby': 'basic-button', }}
-            >
-                <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
-                    <img src='/assets/eye.png' /><Link href='./detalhes_colaborador' ><p style={{ margin: '1rem', color: '#587169' }}>Ver colaborador</p></Link></MenuItem>
-                <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
-                    <img src='/assets/trash.png' /><p style={{ margin: '1rem', color: '#CAD6D1' }}>Excluir</p></MenuItem>
-            </Menu>
-        </div >
+            {['bottom'].map((anchor) => (
+                <React.Fragment key={anchor}>
+                    <Button onClick={toggleDrawer(anchor, true)}>Colaboradores <img src='/assets/menu.png' /></Button>
+                    <Drawer
+                        anchor={anchor}
+                        open={state[anchor]}
+                        onClose={toggleDrawer(anchor, false)}
+                    >
+                        {list(anchor)}
+                    </Drawer>
+                </React.Fragment>
+            ))}
+        </div>
     );
 }
