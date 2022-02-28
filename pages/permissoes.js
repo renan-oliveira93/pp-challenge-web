@@ -16,8 +16,14 @@ export default function Permissoes_pg() {
                 <Sidebar />
                 <div className={styles.container}>
                     <div className={styles.h1_detalhes}>
-                        <Link href='./cargos'><a><img src="/assets/voltar.png"></img></a></Link>
-                        <h1>Cargos e permissões</h1>
+                        <div className={styles.table_desktop}>
+                            <Link href='./cargos'><a><img src="/assets/voltar.png"></img></a></Link>
+                            <h1>Cargos e permissões</h1>
+                        </div>
+                        <div className={styles.pg_permissoes_mobile}>
+                            <Link href='./cargos'><a><img src="/assets/voltar.png"></img></a></Link>
+                            <h1>Novo cargo</h1>
+                        </div>
                     </div>
                     <Table_permissoes />
                 </div>

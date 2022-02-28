@@ -612,6 +612,143 @@
         align-items: center;
     }
 
+    /*estilizações responsivas da pg detalhes*/
+
+    .h1_detalhes {
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+    .h1_detalhes a {
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h1_detalhes img {
+        height: 4rem;
+        width: 3rem;
+    }
+
+    .info_pessoais {
+        font-size: 3rem;
+    }
+
+    .fieldset_info {
+        flex-direction: column;
+    }
+
+    .fieldset_info a {
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
+    }
+
+    .fieldset_info img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .fieldset_info p {
+        font-size: 3rem;
+    }
+
+    .fieldset_info h4 {
+        font-size: 3rem;
+    }
+
+    .fieldset_info fieldset {
+        width: 55rem;
+        height: 10rem;
+    }
+
+    .avatar_detalhes_colaborador {
+        margin: 3rem;
+        margin-top: 5rem;
+    }
+
+    .avatar_detalhes_colaborador img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .avatar_detalhes_colaborador h3 {
+        font-size: 3rem;
+    }
+
+    .avatar_detalhes_colaborador p {
+        font-size: 3rem;
+    }
+
+    .fieldset_dados {
+        flex-direction: column;
+        width: 55rem;
+    }
+
+    .fieldset_dados h3 {
+        font-size: 3rem;
+        margin: 3rem;
+    }
+
+    .fieldset_detalhes {
+        margin: 2rem;
+        width: 45rem;
+        height: 10rem;
+        font-size: 3rem;
+    }
+
+    .fieldset_detalhes button {
+        font-size: 3rem;
+    }
+
+    .fieldset_detalhes img {
+        width: 3rem;
+        height: 2rem;
+    }
+
+    /*estilizações responsivas da pg permissoes*/
+
+    .pg_permissoes_mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .table h2 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+
+    .permissoes_dados {
+        flex-direction: column;
+    }
+
+    .permissoes_dados fieldset {
+        font-size: 2rem;
+        width: 55rem;
+        height: 10rem;
+    }
+
+    .permissoes_dados p {
+        font-size: 2rem;
+    }
+
+    .lista td {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+
+    .lista svg {
+        width: 5rem;
+        height: 5rem;
+    }
+
 }
 
 
@@ -621,6 +758,10 @@
     }
 
     .pg_mobile {
+        display: none;
+    }
+
+    .pg_permissoes_mobile {
         display: none;
     }
 
