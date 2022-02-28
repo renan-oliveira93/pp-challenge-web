@@ -598,6 +598,20 @@
         margin: 2rem;
         display: none;
     }
+
+    .table_desktop {
+        display: none;
+    }
+
+    .li_principal_cargos {
+        width: 53rem;
+        margin-left: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
 
 
