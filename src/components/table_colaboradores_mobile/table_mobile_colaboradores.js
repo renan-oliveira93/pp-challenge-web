@@ -3,6 +3,7 @@ import styles from '../../../styles/Home.module.css';
 import apiAgents from "../../../pages/api/api_agents";
 import DropdownMenuResp from "../dropdown_menu_resp/dropdown_menu_resp";
 import TemporaryDrawer from "../dropdown_mobile/dropdown_mobile";
+import ShowHide from "../show_hide_list/show_hide_list";
 
 
 
@@ -53,26 +54,29 @@ export default function TableMobileColaboradores() {
                                     </div>
                                 </div>
                                 <div className={styles.list_dropdown}>
-                                    <img src="/assets/seta_baixo.png" />
+                                    <ShowHide />
                                 </div>
 
                             </li>
 
-                            <div className={styles.hide_part}>
+                            <div >
+                                <div id="hide_part">
 
-                                <div className={styles.hide_list}>
+                                    <div className={styles.hide_list}>
 
-                                    <li><p className={styles.hide_list_p}>Departamento</p>{coluna.department}</li>
+                                        <li><p className={styles.hide_list_p}>Departamento</p>{coluna.department}</li>
 
-                                    <li><p className={styles.hide_list_p}>Cargo</p>{coluna.role}</li>
+                                        <li><p className={styles.hide_list_p}>Cargo</p>{coluna.role}</li>
 
-                                    <li><p className={styles.hide_list_p}>Unidade</p>{coluna.branch}</li>
+                                        <li><p className={styles.hide_list_p}>Unidade</p>{coluna.branch}</li>
 
-                                    <li><p className={styles.hide_list_p}>Status</p>{coluna.status}</li>
+                                        <li><p className={styles.hide_list_p}>Status</p>{coluna.status}</li>
 
-                                </div>
-                                <div className={styles.acoes}>
-                                    <DropdownMenuResp />
+                                    </div>
+                                    <div className={styles.acoes}>
+                                        <DropdownMenuResp />
+                                    </div>
+
                                 </div>
 
                             </div>

@@ -452,6 +452,20 @@
     margin-right: 5rem;
 }
 
+.hide_part {
+    display: none;
+}
+
+.bt_drop {
+    background-color: #ffffff;
+    border: none;
+}
+
+.bt_drop img {
+    height: 2rem;
+    width: 3rem;
+}
+
 .hide_list {
     display: flex;
     justify-content: space-between;

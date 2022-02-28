@@ -6,12 +6,19 @@ html, body, #__next {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #F8FAF9;
 }
+
+#hide_part {
+  display: none;
+}
+
 #__next {
   flex: 1;
 }
-#__next > * {
+
+#__next>* {
   flex: 1;
 }
+
 * {
   box-sizing: border-box;
 }
