@@ -53,20 +53,27 @@ export default function TableMobileColaboradores() {
                                     </div>
                                 </div>
                                 <div className={styles.list_dropdown}>
-                                    <DropdownMenuResp />
+                                    <img src="/assets/seta_baixo.png" />
                                 </div>
 
                             </li>
 
-                            <div className={styles.hide_list}>
+                            <div className={styles.hide_part}>
 
-                                <li><p className={styles.hide_list_p}>Departamento</p>{coluna.department}</li>
+                                <div className={styles.hide_list}>
 
-                                <li><p className={styles.hide_list_p}>Cargo</p>{coluna.role}</li>
+                                    <li><p className={styles.hide_list_p}>Departamento</p>{coluna.department}</li>
 
-                                <li><p className={styles.hide_list_p}>Unidade</p>{coluna.branch}</li>
+                                    <li><p className={styles.hide_list_p}>Cargo</p>{coluna.role}</li>
 
-                                <li><p className={styles.hide_list_p}>Status</p>{coluna.status}</li>
+                                    <li><p className={styles.hide_list_p}>Unidade</p>{coluna.branch}</li>
+
+                                    <li><p className={styles.hide_list_p}>Status</p>{coluna.status}</li>
+
+                                </div>
+                                <div className={styles.acoes}>
+                                    <DropdownMenuResp />
+                                </div>
 
                             </div>
 

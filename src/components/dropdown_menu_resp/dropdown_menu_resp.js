@@ -23,7 +23,7 @@ export default function DropdownMenuResp() {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
             >
-                <img src='/assets/seta_baixo.png' />
+                <img src='/assets/file-plus.png' /><p>Ações</p>
             </Button>
             <Menu
                 id="basic-menu"

@@ -450,6 +450,29 @@
 }
 
 
+.acoes button {
+    width: 50rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border: 4px solid #7cf1dd;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(165, 171, 179, 0.16);
+    color: #34423D;
+    font-weight: 600;
+}
+
+.acoes img {
+    margin: 2rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+
 /*estilização da 404*/
 
 .page404 {
