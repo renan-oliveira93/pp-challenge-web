@@ -353,13 +353,33 @@
 
 .dropdown_colaboradores button {
     width: 58rem;
+    height: 8rem;
     margin: 1rem;
-    font-weight: 500;
-    font-size: 2.53rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #587169;
     border: 4px solid #CAD6D1;
     border-radius: 8px;
     display: flex;
     justify-content: space-around;
+}
+
+.item_menu {
+    font-size: 5rem;
+}
+
+.item_menu p {
+    font-size: 7rem;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 4rem;
+    color: #34423D;
+}
+
+.item_menu img {
+    margin: 2rem;
+    height: 6rem;
+    width: 6rem;
 }
 
 .dropdown_colaboradores img {
@@ -514,8 +534,8 @@
     }
 
     .topnav button {
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
         font-size: 2rem;
     }
 

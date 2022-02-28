@@ -32,9 +32,9 @@ export default function DropdownMenuResp() {
                 onClose={handleClose}
                 MenuListProps={{ 'aria-labelledby': 'basic-button', }}
             >
-                <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
+                <MenuItem style={{ width: '50rem', height: '20rem' }} onClick={handleClose}>
                     <img src='/assets/eye.png' /><Link href='./detalhes_colaborador' ><p style={{ margin: '1rem', color: '#587169' }}>Ver colaborador</p></Link></MenuItem>
-                <MenuItem style={{ width: '280px', height: '61px' }} onClick={handleClose}>
+                <MenuItem style={{ width: '50rem', height: '20rem' }} onClick={handleClose}>
                     <img src='/assets/trash.png' /><p style={{ margin: '1rem', color: '#CAD6D1' }}>Excluir</p></MenuItem>
             </Menu>
         </div >

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from '../../../styles/Home.module.css';
 import apiAgents from "../../../pages/api/api_agents";
 import DropdownMenuResp from "../dropdown_menu_resp/dropdown_menu_resp";
-import Dropdown_colaboradores from "../dropdown_colaboradores/dropdown_colaboradores";
+import TemporaryDrawer from "../dropdown_mobile/dropdown_mobile";
 
 
 
@@ -27,7 +27,7 @@ export default function TableMobileColaboradores() {
 
                 <div className={styles.nav_mobile}>
                     <div className={styles.dropdown_colaboradores}>
-                        <Dropdown_colaboradores />
+                        <TemporaryDrawer />
                     </div>
 
                     <fieldset className={styles.fieldset}>

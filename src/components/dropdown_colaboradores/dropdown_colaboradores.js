@@ -23,7 +23,7 @@ export default function Dropdown_colaboradores() {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
             >
-                <p style={{ color: '#587169' }}>Colaboradores</p> <img src='/assets/menu.png' />
+
             </Button>
             <Menu
                 id="basic-menu"
