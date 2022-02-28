@@ -505,6 +505,12 @@
     width: 4rem;
 }
 
+.table_desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 
 /*estilização da 404*/
 

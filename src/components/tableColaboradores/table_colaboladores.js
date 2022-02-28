@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from '../../../styles/Home.module.css';
 import Link from "next/link";
 import apiAgents from "../../../pages/api/api_agents";
-import BasicMenu from "../dropdown_menu-detalhes/dropdown_menu-detalhes";
+import BasicMenu from "../dropdown_colaboradores/dropdown_colaboradores";
 import Dropdown_colaboradores from "../dropdown_colaboradores/dropdown_colaboradores";
 
 export default function TableColaboradores() {
@@ -61,7 +61,7 @@ export default function TableColaboradores() {
                             <td data-aria-label="Cargo" className={styles.td_hide}>{coluna.role}</td>
                             <td data-aria-label="Unidade" className={styles.td_hide}>{coluna.branch}</td>
                             <td data-aria-label="Status" className={styles.td_hide}>{coluna.status}</td>
-                            <div className={styles.td_hide_bt}><td><BasicMenu /></td></div>
+                            <td><BasicMenu /></td>
                         </tr>
                     })}
 
